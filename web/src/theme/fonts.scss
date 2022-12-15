@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'swera_demoregular';
+    src: url('/assets/fonts/swera_regular_demo-webfont.woff2') format('woff2'),
+         url('/assets/fonts/swera_regular_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'swera_demobold';
+    src: url('/assets/fonts/swera_bold_demo-webfont.woff2') format('woff2'),
+         url('/assets/fonts/swera_bold_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$font-swera-regular: "swera_demoregular";
+$font-swera-bold: "swera_demobold";
