@@ -11,5 +11,8 @@ export class ConstructionPage implements OnInit {
 
   ngOnInit() {
   }
+  goTo(url:string){
+    window.open(url,'_blank')
+  }
 
 }

@@ -4,21 +4,69 @@
     background-size: cover;
 }
 
+.vertial-var {
+    z-index: 2;
+    width: 15px;
+    height: 100%;
+    background-color: var(--ion-color-primary);
+    position: absolute;
+
+}
+
 .box-1 {
     // background-color: var(--ion-color-light);
     // transform: skew(0 15deg 0 0) ;
 }
 
 .logo {
-    width: 200px;
+    width: 180px;
 }
 
-.content-logo{
+.content-logo {
     position: absolute;
 }
-.title-1{
-    font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+
+.footer-box-1 {
+    margin-top: -50px;
 }
-.title-2{
-    font-size: calc(22px + 6 * ((100vw - 320px) / 680));
+
+.title-1 {
+    font-size: calc(22px + 6 * ((100vw - 250px) / 680));
+}
+
+.title-2 {
+    font-size: calc(24px + 6 * ((100vw - 250px) / 680));
+}
+
+@media (max-width:315px){
+    .title-2 {
+        font-size: calc(15px + 6 * ((100vw - 250px) / 680));
+    }
+    .box-1{
+        width:initial!important;
+        flex: none!important;
+        max-width: 100%!important;
+    }
+}
+@media (max-width:992px){
+    .description{
+        font-size: calc(13px + 6 * ((100vw - 250px) / 680));
+    }
+    .title-1 {
+        font-size: calc(17px + 6 * ((100vw - 250px) / 680));
+    }
+    
+    .title-2 {
+        font-size: calc(19px + 6 * ((100vw - 250px) / 680));
+    }
+    .main-content {
+        background-image: url('/assets/images/fondo_construction_small.webp');
+        background-position: left;
+
+    }
+    .box-1 {
+        background-color: var(--ion-color-light);
+        background-color: rgba($color: #f8f8f8, $alpha: 0.9);
+    }
+
 }
