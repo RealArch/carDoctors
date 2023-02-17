@@ -1,0 +1,27 @@
+.nav{
+    --background: none;
+    height: 69px;
+    background-color: var(--ion-color-light);
+    // transition: background-color .3s ease-in;
+}
+.nav-scrolled{
+    // background-color: var(--ion-color-dark)!important;
+
+}
+.menu-items a {
+    text-decoration: none;
+    padding-left: 35px;
+    font-size: 14px;
+    color: var(--ion-color-dark);
+    font-weight: bold;
+    transition: color 0.15s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.menu-items a:hover {
+    color: var(--ion-color-primary);
+}
+
+.menu-items .actived:focus{
+    color: var(--ion-color-primary);
+}

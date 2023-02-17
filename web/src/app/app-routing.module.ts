@@ -2,19 +2,21 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'construction',
-    pathMatch: 'full'
-  },
+
+  // {
+  //   path: '',
+  //   redirectTo: 'public',
+  //   pathMatch: 'full'
+  // },
   {
     path: 'construction',
     loadChildren: () => import('./pages/construction/construction.module').then( m => m.ConstructionPageModule)
   },
+  {
+    path: '',
+    loadChildren: () => import('./pages/public/public.module').then( m => m.PublicPageModule)
+  }
+
 ];
 
 @NgModule({
