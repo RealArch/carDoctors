@@ -27,6 +27,7 @@
 //Swiper
 @import 'swiper/scss';
 @import '@ionic/angular/css/ionic-swiper';
+@import 'swiper/scss/pagination';
 //Importar fonts
 @import "/src/theme/fonts.scss";
 
@@ -36,6 +37,10 @@
 }
 
 //FONTS
+.bold {
+    font-weight: bold;
+}
+
 .title-1 {}
 
 .title-2 {
@@ -49,6 +54,7 @@
     font-weight: bold;
     line-height: normal;
 }
+
 .title-4 {
     text-transform: uppercase;
     font-size: 1rem;
@@ -85,7 +91,14 @@ ion-button {
 
 }
 
+//SHADOWS
+ion-card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .no-box-shadow {
     --box-shadow: none;
 
 }
+
+//

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar-public',
@@ -8,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarPublicComponent implements OnInit {
   scrollTop: any = 0; //Distance from top to actual scroll
 
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
   ngOnInit() {}
-
+  goTo(url:string){
+    this.router.navigate([url])
+  }
 }

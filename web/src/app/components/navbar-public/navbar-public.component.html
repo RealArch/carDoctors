@@ -1,3 +1,4 @@
+
 <ion-toolbar color="" class="nav" [ngClass]="{'nav-scrolled' : scrollTop > 0 }">
   <div class="container">
     <ion-row >
@@ -9,14 +10,14 @@
       <ion-col  class="d-none d-lg-flex justify-content-end align-items-center"> 
 
         <div class="menu-items">
-          <a routerLink="" class="actived">Inicio</a>
+          <a (click)="goTo('')" class="actived">Inicio</a>
           <a routerLink="/portfolio" routerLinkActive="active" class="actived">Nosotros</a>
           <a routerLink="/"class="actived">Servicios</a> 
-          <a routerLink="/contact-us" class="actived">Contacto</a>       
         </div> 
-        <ion-button color="primary" class="no-box-shadow ps-4" expand="block" fill="solid" shape="round">
-          Cotizar
+        <ion-button color="primary" (click)="goTo('contact-us')" class="no-box-shadow ps-4" expand="block" fill="solid" shape="round">
+          Contact Us
         </ion-button>
+        
 
 
         <!-- <ion-select class="mx-3 languageSelectButton" (ionChange)="changeLanguage($event)" [interfaceOptions]="{ cssClass: 'languageSelect' }" [value]="translate.currentLang" interface="popover" placeholder="{{'languages.placeholder_1' | translate}}">

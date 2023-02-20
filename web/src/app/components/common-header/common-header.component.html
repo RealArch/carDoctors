@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="bg"></div>
+  <div class="bg-2"></div>
+  <div class="content container d-flex align-items-center">
+    <div>
+      <div class="title-2 bold">
+        {{headerName}}
+      </div>
+      <div class="subtitle-2">
+        <ion-text *ngFor="let item of breadcrums; index as i">
+          {{item}}<ion-text *ngIf="i+1 < breadcrums.length"> /</ion-text>
+        </ion-text>
+      </div>
+    </div>
+   
+  </div>
+</header>

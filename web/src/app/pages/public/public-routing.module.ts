@@ -11,9 +11,21 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-      }
+      },
+      {
+        path: 'quotation',
+        loadChildren: () => import('./quotation/quotation.module').then( m => m.QuotationPageModule)
+      },
+      {
+        path: 'contact-us',
+        loadChildren: () => import('./contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+      },
     ]
   },
+
+
+
+
  
 ];
 
