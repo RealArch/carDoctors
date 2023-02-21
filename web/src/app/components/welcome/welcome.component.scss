@@ -1,0 +1,16 @@
+.img {
+    background-image: url('/assets/images/about_us/facility.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.pharagraph {
+    strong{
+        font-size: 1.2rem; 
+        // color: var(--ion-color-primary);
+    }
+    font-size: 1.2rem;
+    line-height: normal;
+    color: var(--ion-color-dark);
+}

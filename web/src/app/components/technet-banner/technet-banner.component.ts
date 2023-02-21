@@ -10,5 +10,7 @@ export class TechnetBannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-
+  download(url:string) {
+    window.open(url, '_blank')
+  }
 }

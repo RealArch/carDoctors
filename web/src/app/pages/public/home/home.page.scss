@@ -1,24 +1,27 @@
 .slide {
-    height: calc(100vh - 69px);
+    height: calc(90vh - 69px);
     background-color: var(--ion-color-light);
     text-align: left;
     width: 100%;
-    text-transform: uppercase;
+    
+    background-size: cover;
+}
+.slide-1{
+    background-image:
+        linear-gradient(to left,
+            rgba(245, 246, 252, 0),
+            rgba(0, 0, 0, 0.75)),
+        url('/assets/images/home_main_banner/1.webp');
+}
+.slide-2{
+    background-image:
+        linear-gradient(to left,
+            rgba(245, 246, 252, 0),
+            rgba(0, 0, 0, 0.75)),
+        url('/assets/images/home_main_banner/2.webp');
 }
 
 .mainSwiper {
-    .bg-1 {
-        background-image: url("/assets/images/home_main_banner/1.webp");
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        filter: brightness(56%);
-        -webkit-filter: brightness(56%);
-        -moz-filter: brightness(56%);
-    }
-
     .text {
         position: absolute;
         top: 0;
@@ -27,28 +30,69 @@
         height: 100%;
     }
 
-    .container div:nth-child(1) {
-        font-weight: bold;
-        font-size: calc(25px + 6 * ((100vw - 320px) / 680));
-    }
+    .cont div:nth-child(1) {
+        width: fit-content;
+        border-left: 6px solid var(--ion-color-primary);
+        padding: 0px 17px;
+        background-color: rgba($color: var(--ion-color-primary-rgb), $alpha: 0.4);
+        font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+        font-style: italic;
+        text-transform: uppercase;
 
-    .container div:nth-child(2) {
+        animation-duration: 0.75s;
+        animation-name: animate-fade;
+        animation-delay: 0.25s;
+        animation-fill-mode: backwards;
+
+    }
+    @keyframes animate-fade {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+    .cont div:nth-child(2) {
         line-height: normal;
         font-weight: bold;
-        font-size: calc(65px + 6 * ((100vw - 320px) / 680));
+        font-size: calc(40px + 6 * ((100vw - 320px) / 680));
+        text-transform: uppercase;
+
+        animation-duration: 0.75s;
+        animation-name: animate-fade;
+        animation-delay: 0.5s;
+        animation-fill-mode: backwards;
     }
 
-    .container div:nth-child(3) {
-        font-size: calc(18px + 6 * ((100vw - 320px) / 680));
+    .cont div:nth-child(3) {
+        font-size: calc(11px + 6 * ((100vw - 320px) / 680));
+        animation-duration: 0.75s;
+        animation-name: animate-fade;
+        animation-delay: 0.75s;
+        animation-fill-mode: backwards;
+    }
+    .cont div:nth-child(4) {
+        font-size: calc(11px + 6 * ((100vw - 320px) / 680));
+        animation-duration: 0.75s;
+        animation-name: animate-fade;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
     }
 }
-
+#welcome{
+    background-color: var(--ion-color-light);
+    background-position: right center;
+    background-size: cover;
+}
 .services {
-    .service-item{
+    .service-item {
         padding-left: 30px;
         padding-right: 30px;
         margin-bottom: 20px;
     }
+
     .item {
         width: 100%;
         background-size: cover;
@@ -60,7 +104,7 @@
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
-        
+
             url('/assets/images/services/car-diagnostic.webp');
     }
 
@@ -68,14 +112,15 @@
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
-        
+
             url('/assets/images/services/change-engine-oil.webp');
     }
+
     .service-3 {
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
-        
+
             url('/assets/images/services/auto-Repair.webp');
     }
 
@@ -92,36 +137,42 @@
         background-image:
             url('/assets/images/services/tire.webp');
     }
+
     .service-6 {
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
             url('/assets/images/services/muffer.webp');
     }
+
     .service-7 {
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
             url('/assets/images/services/transmission.webp');
     }
+
     .service-8 {
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
             url('/assets/images/services/check-engine-light.webp');
     }
+
     .service-9 {
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
             url('/assets/images/services/brake.webp');
     }
+
     .service-10 {
         aspect-ratio: 1/1;
         width: 100%;
         background-image:
             url('/assets/images/services/tune-ups.webp');
     }
+
     .service-11 {
         aspect-ratio: 1/1;
         width: 100%;

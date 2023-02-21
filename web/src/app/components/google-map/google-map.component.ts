@@ -9,10 +9,11 @@ export class GoogleMapComponent implements OnInit {
 
   constructor() { }
   options: google.maps.MapOptions = {
-    center: { lat: 28.220436, lng: -81.3060879 },
-    zoom: 14,
+    center: { lat: 28.2425672, lng: -81.2585409 },
+    zoom: 17,
     gestureHandling:"cooperative" 
   };
+
   ngOnInit() { }
   display: any;
 

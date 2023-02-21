@@ -28,6 +28,8 @@
 @import 'swiper/scss';
 @import '@ionic/angular/css/ionic-swiper';
 @import 'swiper/scss/pagination';
+@import 'swiper/scss/effect-fade';
+@import 'swiper/scss/autoplay';
 //Importar fonts
 @import "/src/theme/fonts.scss";
 
@@ -37,6 +39,18 @@
 }
 
 //FONTS
+.section-title {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.underline-section-title {
+    height: 4px;
+    background-color: var(--ion-color-primary);
+    width: 60px;
+}
+
 .bold {
     font-weight: bold;
 }

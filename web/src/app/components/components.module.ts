@@ -10,6 +10,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { GoogleMapsModule } from '@angular/google-maps'
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { TechnetBannerComponent } from './technet-banner/technet-banner.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { WhyUsComponent } from './why-us/why-us.component';
 
 //
 
@@ -21,7 +23,9 @@ import { TechnetBannerComponent } from './technet-banner/technet-banner.componen
     CommonHeaderComponent,
     ContactFormComponent,
     GoogleMapComponent,
-    TechnetBannerComponent
+    TechnetBannerComponent,
+    WelcomeComponent,
+    WhyUsComponent
   ],
   imports: [
     GoogleMapsModule,
@@ -37,7 +41,9 @@ import { TechnetBannerComponent } from './technet-banner/technet-banner.componen
     CommonHeaderComponent,
     ContactFormComponent,
     GoogleMapComponent,
-    TechnetBannerComponent
+    TechnetBannerComponent,
+    WelcomeComponent,
+    WhyUsComponent
   ]
 })
 export class ComponentsModule { }

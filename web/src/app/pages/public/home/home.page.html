@@ -1,55 +1,85 @@
 <ion-content>
-  <header>
-    <swiper class="h-100 mainSwiper">
+  <header id='home'>
+    <swiper #swiperHeader class="h-100 mainSwiper" [config]="config" (slideChange)="onSlideChange($event)">
       <ng-template swiperSlide>
-        <div class="slide">
-          <div class="bg-1">
-          </div>
-          <div class="text d-flex align-items-center">
-            <div class="container">
-              <div class="t-white">Big Sale Offer</div>
-              <div class="t-white">Parts and Repair</div>
-              <div class="t-white">Texto exclusivo or esta semana solamente</div>
+        <div class="slide slide-1">
+          <ion-grid fixed class="h-100">
+            <ion-row class="h-100" >
+              <ion-col class="d-flex align-items-center h-100">
+                <div class="cont">
+                  <div #text1 class="t-white text-1 ">Car doctor's</div>
+                  <div #text2 class="t-white w-75">complete automotive center</div>
+                  <div #text3 class="t-white w-75">Service / Repair / Maintenance</div>
+                  <div>
+                    <ion-button href="#services" size="large" class="pt-2 text-white">
+                      view services
+                    </ion-button>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+            <div class="text ">
               <div>
-                <ion-button routerLink="contact-us" size="large" class="pt-2 text-white">
-                  Contáctanos
-                </ion-button>
+                
               </div>
             </div>
-          </div>
+          </ion-grid>
+    
         </div>
       </ng-template>
       <ng-template swiperSlide>
-        <div class="slide">
-          <div class="bg-1">
-          </div>
-          <div class="text d-flex align-items-center">
-            <div class="container">
-              <div class="t-white">Big Sale Offer</div>
-              <div class="t-white">Parts and Repair</div>
-              <div class="t-white">Texto exclusivo or esta semana solamente</div>
+        <div class="slide slide-2">
+          <ion-grid fixed class="h-100">
+            <ion-row class="h-100" >
+              <ion-col class="d-flex align-items-center h-100">
+                <div class="cont">
+                  <div #text1 class="t-white text-1 ">Car doctor's</div>
+                  <div #text2 class="t-white w-75">complete automotive center</div>
+                  <div #text3 class="t-white w-75">Service / Repair / Maintenance</div>
+                  <div>
+                    <ion-button routerLink="contact-us" size="large" class="pt-2 text-white">
+                      Contact us
+                    </ion-button>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+            <div class="text ">
               <div>
-                <ion-button routerLink="contact-us" size="large" class="pt-2 text-white">
-                  Contáctanos
-                </ion-button>
+                
               </div>
             </div>
-          </div>
+          </ion-grid>
+    
         </div>
       </ng-template>
     </swiper>
   </header>
+  <section id="welcome" class="py-5">
+    <ion-grid fixed>
+      <app-welcome></app-welcome>
+    </ion-grid>
+  </section>
   <section id="technetBanner" class="pt-5">
-    <div class="container">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12" class="pb-3 section-title">
+          Our Warranty
+          <div class="underline-section-title"></div>
+        </ion-col>
+      </ion-row>  
       <app-technet-banner></app-technet-banner>
-    </div>
+    </ion-grid>
   </section>
   <section class="services py-5" id="services">
 
-    <div class="container">
-      <div class="title-2 pb-2">
-        Services
-      </div>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12" class="pb-3 section-title">
+          Services
+          <div class="underline-section-title"></div>
+        </ion-col>
+      </ion-row>  
       <ion-row class="d-flex justify-content-center">
 
 
@@ -80,21 +110,21 @@
           <div class="name">
             Timing belt
           </div>
-        </ion-col> 
+        </ion-col>
         <ion-col class="service-item" size="4" size-xl="2">
           <div class="item d-flex align-items-center service-5">
           </div>
           <div class="name">
             Tire service
           </div>
-        </ion-col> 
+        </ion-col>
         <ion-col class="service-item" size="4" size-xl="2">
           <div class="item d-flex align-items-center service-6">
           </div>
           <div class="name">
             Muffer & exhaust
           </div>
-        </ion-col> 
+        </ion-col>
         <ion-col class="service-item" size="4" size-xl="2">
           <div class="item d-flex align-items-center service-7">
           </div>
@@ -130,18 +160,22 @@
             Air conditioning
           </div>
         </ion-col>
-     
+
       </ion-row>
-    </div>
+    </ion-grid>
   </section>
-  <section class="testimonials">
-    <div class="container">
-      <!-- <div class="title-2 pb-2">
-        Servicios
-      </div> -->
+  <section class="testimonials py-5">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12" class="pb-3 section-title">
+          Out Clients
+          <div class="underline-section-title"></div>
+        </ion-col>
+      </ion-row>  
+
       <app-testimonials></app-testimonials>
-    </div>
-    
+    </ion-grid>
+
   </section>
   <footer>
     <app-footer></app-footer>
