@@ -6,6 +6,10 @@ import { FooterComponent } from './footer/footer.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { SwiperModule } from 'swiper/angular';
 import { CommonHeaderComponent } from './common-header/common-header.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapComponent } from './google-map/google-map.component';
+import { TechnetBannerComponent } from './technet-banner/technet-banner.component';
 
 //
 
@@ -14,9 +18,13 @@ import { CommonHeaderComponent } from './common-header/common-header.component';
     NavbarPublicComponent,
     FooterComponent,
     TestimonialsComponent,
-    CommonHeaderComponent
+    CommonHeaderComponent,
+    ContactFormComponent,
+    GoogleMapComponent,
+    TechnetBannerComponent
   ],
   imports: [
+    GoogleMapsModule,
     CommonModule,
     IonicModule,
     SwiperModule
@@ -26,7 +34,10 @@ import { CommonHeaderComponent } from './common-header/common-header.component';
     NavbarPublicComponent,
     FooterComponent,
     TestimonialsComponent,
-    CommonHeaderComponent
+    CommonHeaderComponent,
+    ContactFormComponent,
+    GoogleMapComponent,
+    TechnetBannerComponent
   ]
 })
 export class ComponentsModule { }

@@ -18,7 +18,7 @@
               Quick Links
             </div>
             <ion-list class="py-0 footer-list" >
-              <ion-item routerlink="contact-us" button lines="none" color="transparent" class="item ">
+              <ion-item (click)="goTo('contact-us')" button lines="none" color="transparent" class="item ">
                 <ion-icon color="primary" name="chevron-forward" class="bold pe-2"></ion-icon>
                 Contact Us
               </ion-item>
@@ -36,6 +36,17 @@
           cardoctorsllc@gmail.com <br>
           (305) 766 15 17
         </p>
+          <ion-buttons>
+            <ion-button (click)="goToSocial('https://www.instagram.com/car.doctors.llc/')" color="primary" class="me-2">
+              <ion-icon color="light" slot="icon-only" name="logo-instagram"></ion-icon>
+            </ion-button>
+            <ion-button (click)="goToSocial('https://www.instagram.com/car.doctors.llc/')" color="primary" class="me-2">
+              <ion-icon color="light" slot="icon-only" name="logo-facebook"></ion-icon>
+            </ion-button>
+            <ion-button (click)="goToSocial('https://www.instagram.com/car.doctors.llc/')" color="primary">
+              <ion-icon color="light" slot="icon-only" name="logo-twitter"></ion-icon>
+            </ion-button>
+          </ion-buttons>
       </ion-col>
     </ion-row>
   </div>

@@ -4,15 +4,15 @@
     <ion-row >
       <ion-col size="2" size-lg="2" class="pe-5 my-1" >
         
-          <img width="100%" class="img-fluid" src="/assets/images/logos/logo_1_svg.svg" alt="car doctors isologo" routerLink="/" >
+          <img (click)="goTo('')" width="100%" class="img-fluid" src="/assets/images/logos/logo_1_svg.svg" alt="car doctors isologo" routerLink="/" >
       
       </ion-col>
       <ion-col  class="d-none d-lg-flex justify-content-end align-items-center"> 
 
         <div class="menu-items">
-          <a (click)="goTo('')" class="actived">Inicio</a>
-          <a routerLink="/portfolio" routerLinkActive="active" class="actived">Nosotros</a>
-          <a routerLink="/"class="actived">Servicios</a> 
+          <a (click)="goTo('')" class="actived">Home</a>
+          <a routerLink="/portfolio" routerLinkActive="active" class="actived">About Us</a>
+          <a href="#services" class="actived">Services</a> 
         </div> 
         <ion-button color="primary" (click)="goTo('contact-us')" class="no-box-shadow ps-4" expand="block" fill="solid" shape="round">
           Contact Us

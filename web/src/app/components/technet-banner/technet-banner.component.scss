@@ -1,0 +1,27 @@
+.item {}
+
+.bg {
+    background-image:
+        linear-gradient(to left,
+            rgba(245, 246, 252, 0),
+            rgb(31, 31, 31)),
+        url('/assets/images/logos/technet/sunset-road.webp');
+    width: 100%;
+    background-size: cover;
+    color: var(--ion-color-light);
+
+}
+
+.image-box {
+    width: fit-content;
+}
+
+.item-button {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.pharagraph {
+    margin-bottom: 30px;
+}
