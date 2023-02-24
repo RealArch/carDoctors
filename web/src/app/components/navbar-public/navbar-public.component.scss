@@ -1,7 +1,5 @@
 .nav{
-    --background: none;
     height: 69px;
-    background-color: var(--ion-color-light);
     // transition: background-color .3s ease-in;
 }
 .nav-scrolled{
@@ -12,7 +10,7 @@
     text-decoration: none;
     padding-left: 35px;
     font-size: 14px;
-    color: var(--ion-color-dark);
+    color: var(--ion-color-light);
     font-weight: bold;
     transition: color 0.15s linear;
     cursor: pointer;

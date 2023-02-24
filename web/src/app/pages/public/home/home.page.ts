@@ -13,7 +13,24 @@ Swiper.use([Pagination, EffectFade, Autoplay])
 })
 export class HomePage implements OnInit {
   @ViewChild('swiperHeader') swiperHeader!: SwiperComponent;
-
+  configServices:SwiperOptions={
+    slidesPerView:1,
+    loop: true,
+    pagination: {
+      type: "bullets"
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      450: {
+        slidesPerView: 2
+      },
+      992: {
+        slidesPerView: 5
+      }
+    }
+  }
   config: SwiperOptions = {
     loop: true,
     pagination: {

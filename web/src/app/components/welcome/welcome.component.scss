@@ -1,16 +1,34 @@
 .img {
-    background-image: url('/assets/images/about_us/facility.webp');
+    // background-image: url('/assets/images/about_us/facility.webp');
+    background-image:
+    linear-gradient(to left,
+       rgba(245, 246, 252, 0),
+       rgba(0, 0, 0, 0.75)),
+   url('/assets/images/about_us/facility.webp');
     background-size: cover;
     background-position: center;
+    min-height: 200px;
     
 }
 
 .pharagraph {
     strong{
-        font-size: 1.2rem; 
-        // color: var(--ion-color-primary);
+        font-size: 1.1rem; 
+        color: var(--ion-color-primary);
     }
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: normal;
-    color: var(--ion-color-dark);
+    font-weight: 100;
+    // color: var(--ion-color-dark);
+}
+.bg{
+    
+        background-image:
+        linear-gradient(to left,
+           rgba(245, 246, 252, 0),
+           rgba(0, 0, 0, 0.50)),
+       url('/assets/images/trama_1.svg')!important;  
+       background-size: cover;
+       background-position: right;
+  
 }

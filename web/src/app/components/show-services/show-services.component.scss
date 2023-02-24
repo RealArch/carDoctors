@@ -1,13 +1,18 @@
-    .service-items{}
+
     .service-item {
-        // margin-bottom: 20px;
+        ion-card{
+            background-color: var(--ion-color-dark-tint);
+        }
     }
 
     .item {
         width: 100%;
         background-size: cover;
         color: var(--ion-color-light);
-        border-radius: 100%
+        border-radius: 100%;
+        border: 5px solid var(--ion-color-primary-shade);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 29px 0px;
+        margin-bottom: 15px;
     }
 
     .service-1 {
@@ -92,7 +97,7 @@
 
     .name {
         text-align: center;
-        color: var(--ion-color-dark);
+        color: var(--ion-color-light);
         font-weight: bold;
         line-height: normal;
         padding-top: 10px;

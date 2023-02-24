@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content color="" class="content">
   <section>
     <app-common-header [headerName]="headerName" [breadcrums]="breadcrums"></app-common-header>
   </section>
@@ -61,7 +61,10 @@
     </section>
 
     <section class="contactForm mb-5">
-      <app-contact-form></app-contact-form>
+      <ion-card class="p-2" color="dark">
+        <app-contact-form></app-contact-form>
+
+      </ion-card>
     </section>
     
     

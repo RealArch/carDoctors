@@ -5,3 +5,14 @@
     aspect-ratio: 1 / 1;
     background-color: var(--ion-color-primary);
 }
+.contact-data{
+    ion-card{
+        background-color: var(--ion-color-dark-shade);
+        color: var(--ion-color-light);
+    }
+}
+.content{
+    --background: var(--ion-color-dark-tint);
+}
+.contactForm{
+}
