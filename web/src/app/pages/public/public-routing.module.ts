@@ -9,8 +9,12 @@ const routes: Routes = [
     component: PublicPage,
     children:[
       {
-        path: '',
+        path: 'home',
         loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+      },
+      {
+        path: 'services',
+        loadChildren: () => import('./services/services.module').then( m => m.ServicesPageModule)
       },
       {
         path: 'quotation',
@@ -26,6 +30,8 @@ const routes: Routes = [
       },
     ]
   },
+
+
 
 
 

@@ -1,9 +1,7 @@
 <div class="footer py-5">
   <ion-grid fixed>
-
     <ion-row>
-      <ion-col size="12" size-lg="3">
-
+      <ion-col size="12" size-md="4" size-lg="3">
         <img width="70%" class="img-fluid pe-5 pb-3" src="/assets/images/logos/logo_1_svg_White.svg"
           alt="car doctors isologo" routerLink="/">
         <div class="">
@@ -13,9 +11,9 @@
           </p>
         </div>
       </ion-col>
-      <ion-col size="12" size-lg="6" class="px-5">
+      <ion-col size="12" size-md="4" class="">
         <ion-row>
-          <ion-col size="4">
+          <ion-col size="12">
             <div class="title-4 pb-3">
               Quick Links
             </div>
@@ -27,13 +25,17 @@
               <ion-item (click)="goTo('about-us')" button lines="none" color="transparent" class="item ">
                 <ion-icon color="primary" name="chevron-forward" class="bold pe-2"></ion-icon>
                 About Us
-              </ion-item>              
+              </ion-item>      
+              <ion-item (click)="goTo('services')" button lines="none" color="transparent" class="item ">
+                <ion-icon color="primary" name="chevron-forward" class="bold pe-2"></ion-icon>
+                Services
+              </ion-item>          
             </ion-list>
 
           </ion-col>
         </ion-row>
       </ion-col>
-      <ion-col size="12" size-lg="3">
+      <ion-col size="12" size-md="4" size-lg="3">
         <div class="title-4 pb-3">
           Store information
         </div>

@@ -12,6 +12,7 @@ import { GoogleMapComponent } from './google-map/google-map.component';
 import { TechnetBannerComponent } from './technet-banner/technet-banner.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { WhyUsComponent } from './why-us/why-us.component';
+import { ShowServicesComponent } from './show-services/show-services.component';
 
 //
 
@@ -25,7 +26,8 @@ import { WhyUsComponent } from './why-us/why-us.component';
     GoogleMapComponent,
     TechnetBannerComponent,
     WelcomeComponent,
-    WhyUsComponent
+    WhyUsComponent,
+    ShowServicesComponent
   ],
   imports: [
     GoogleMapsModule,
@@ -43,7 +45,8 @@ import { WhyUsComponent } from './why-us/why-us.component';
     GoogleMapComponent,
     TechnetBannerComponent,
     WelcomeComponent,
-    WhyUsComponent
+    WhyUsComponent,
+    ShowServicesComponent
   ]
 })
 export class ComponentsModule { }
