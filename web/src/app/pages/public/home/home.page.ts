@@ -14,6 +14,8 @@ Swiper.use([Pagination, EffectFade, Autoplay])
 export class HomePage implements OnInit {
   @ViewChild('swiperHeader') swiperHeader!: SwiperComponent;
   configServices:SwiperOptions={
+    preventClicks:false,
+    preventClicksPropagation:false,
     slidesPerView:1,
     loop: true,
     pagination: {
@@ -32,6 +34,9 @@ export class HomePage implements OnInit {
     }
   }
   config: SwiperOptions = {
+    preventClicks:false,
+    preventClicksPropagation:false,
+
     loop: true,
     pagination: {
       type: "bullets"
@@ -60,6 +65,10 @@ export class HomePage implements OnInit {
     //     }
     //   }
     // });
+  }
+  stopProp(ev:Event){
+    console.log('aja')
+    ev.stopPropagation()
   }
   ionViewWillEnter() {
     // this.router.events.subscribe(event => {

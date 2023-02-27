@@ -1,18 +1,18 @@
 <ion-menu contentId="main-content">
   <ion-header>
-    <ion-toolbar color="primary">
+    <ion-toolbar color="dark">
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
+  <ion-content class="ion-padding content">
     <!-- <ion-menu-toggle>
       <ion-button>Click to close the menu</ion-button>
     </ion-menu-toggle> -->
-    <ion-list >
-      <ion-item routerDirection="root" routerLink="/home"  lines="none" detail="false" routerLinkActive="selected">Home</ion-item>
-      <ion-item routerDirection="root" routerLink="/about-us"  lines="none" detail="false" routerLinkActive="selected">About Us</ion-item>
-      <ion-item routerDirection="root" routerLink="/services" fragment="services" lines="none" detail="false" routerLinkActive="selected">Services</ion-item>
-      <ion-item routerDirection="root" routerLink="/contact-us"  lines="none" detail="false" routerLinkActive="selected">contactUs</ion-item>
+    <ion-list class="list">
+      <ion-item (click)="closeMenu()" routerDirection="root" routerLink="/home"  lines="none" detail="false" routerLinkActive="selected">Home</ion-item>
+      <ion-item (click)="closeMenu()" routerDirection="root" routerLink="/about-us"  lines="none" detail="false" routerLinkActive="selected">About Us</ion-item>
+      <ion-item (click)="closeMenu()" routerDirection="root" routerLink="/services" fragment="services" lines="none" detail="false" routerLinkActive="selected">Services</ion-item>
+      <ion-item (click)="closeMenu()" routerDirection="root" routerLink="/contact-us"  lines="none" detail="false" routerLinkActive="selected">Contact Us</ion-item>
     </ion-list>
     <!-- <div class="menu-items">a
       <a (click)="goTo('')" href="#home" routerLinkActive="active" class="actived">Home</a>

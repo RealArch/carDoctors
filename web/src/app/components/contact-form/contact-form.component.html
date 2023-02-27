@@ -1,37 +1,51 @@
 <div class="contact-form-container">
-  <ion-row>
-    <ion-col size="12" size-lg="5" class="d-flex align-items-center justify-content-center">
-      <img class="img-fluid" src="/assets/images/contact_1.svg" alt="">
-    </ion-col>
-    <ion-col size="12" size-lg="7" class="border-start p-5">
-      <div class="title-3 mb-4">
-        Send Us a Message
-      </div>
-      <ion-row>
-        <ion-col size="12" size-lg="6">
-          <ion-item fill="outline">
-            <ion-label position="floating">Name</ion-label>
-            <ion-input type="text"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12" size-lg="6">
-          <ion-item fill="outline">
-            <ion-label position="floating">Email</ion-label>
-            <ion-input type="email"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12">
-          <ion-item fill="outline">
-            <ion-label position="floating">Message</ion-label>
-            <ion-textarea rows="5" placeholder="Type your message here"></ion-textarea>
-          </ion-item>
-        </ion-col>
-        <ion-col>
-          <ion-button size="large" color="primary" fill="solid">
-            Send
-          </ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-col>
-  </ion-row>
+  <form [formGroup]="mailForm">
+    <ion-row>
+      <ion-col size="12" size-lg="5" class="d-flex align-items-center justify-content-center">
+        <img class="img-fluid" src="/assets/images/contact_1.svg" alt="">
+      </ion-col>
+      <ion-col size="12" size-lg="7" class=" p-md-5">
+        <div class="title-3 mb-4">
+          Send Us a Message
+        </div>
+        <ion-row>
+          <ion-col size="12" size-lg="6">
+            <ion-item fill="outline">
+              <ion-label position="floating">Name</ion-label>
+              <ion-input formControlName="name" type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12" size-lg="6">
+            <ion-item fill="outline">
+              <ion-label position="floating">Phone</ion-label>
+              <ion-input formControlName="phone" type="tel"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item fill="outline">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input formControlName="email" type="email"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item fill="outline">
+              <ion-label position="floating">Message</ion-label>
+              <ion-textarea formControlName="message" rows="5" placeholder="Type your message here"></ion-textarea>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12" *ngIf="!mailForm.valid">
+            <ion-text color="danger">Please complete all the fields to unlock the "SEND" button.</ion-text>
+          </ion-col>
+          <ion-col>
+            <ion-button (click)="sendMail(mailForm.value)" [disabled]="!mailForm.valid" size="large" color="primary"
+              fill="solid">
+              <ion-text *ngIf="!sendingMail">Send</ion-text>
+              <ion-spinner *ngIf="sendingMail" color="light"></ion-spinner>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </form>
+
 </div>

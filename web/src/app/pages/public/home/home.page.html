@@ -1,61 +1,60 @@
 <ion-content color="dark">
-  <header id='home'>
-    <swiper #swiperHeader class="h-100 mainSwiper" [config]="config" (slideChange)="onSlideChange($event)">
+  <header id='home' class="">
+    <swiper #swiperHeader class="h-100 mainSwiper" [config]="config"  (slideChange)="onSlideChange($event)">
       <ng-template swiperSlide>
-        <div class="slide slide-1">
+        <div class="slide slide-1 ion-padding">
           <ion-grid fixed class="h-100">
             <ion-row class="h-100">
-              <ion-col class="d-flex align-items-center h-100">
+              <ion-col size-md="8" class="d-flex align-items-center h-100">
                 <div class="cont">
-                  <div #text1 class="t-white text-1 ">Car Doctor`s</div>
-                  <div #text2 class="t-white w-75">complete automotive center</div>
-                  <div #text3 class="t-white w-75">Service / Repair / Maintenance</div>
+                  <div #text1 class="t-white text-1 swera-b"> 
+                    <ion-text color="primary">Car</ion-text>
+                    <ion-text>Doctor`s</ion-text>
+                  </div>
+                  <div #text2 class="t-white w-md-75">complete automotive center</div>
+                  <div #text3 class="t-white w-md-75">Service / Repair / Maintenance</div>
                   <div>
-                    <ion-button href="#services" size="large" class="pt-2 text-white">
+                    <ion-button routerLink="/services" size="large" class="pt-2 text-white">
                       view services
                     </ion-button>
                   </div>
                 </div>
               </ion-col>
             </ion-row>
-            <div class="text ">
-              <div>
 
-              </div>
-            </div>
           </ion-grid>
 
         </div>
       </ng-template>
-      <ng-template swiperSlide>
-        <div class="slide slide-2">
+      <ng-template swiperSlide>   
+             
+        <div class="slide slide-2 ion-padding">
           <ion-grid fixed class="h-100">
             <ion-row class="h-100">
-              <ion-col class="d-flex align-items-center h-100">
+              <ion-col size-md="8" class="d-flex align-items-center h-100">
                 <div class="cont">
-                  <div #text1 class="t-white text-1 ">Car Doctor`s</div>
-                  <div #text2 class="t-white w-75">complete automotive center</div>
-                  <div #text3 class="t-white w-75">Service / Repair / Maintenance</div>
+                  <div #text1 class="t-white text-1 swera-b"> 
+                    <ion-text color="primary">Car</ion-text>
+                    <ion-text>Doctor`s</ion-text>
+                  </div>
+                  <div #text2 class="t-white">complete automotive center</div>
+                  <div #text3 class="t-white">Service / Repair / Maintenance</div>
                   <div>
-                    <ion-button routerLink="contact-us" size="large" class="pt-2 text-white">
+                    <ion-button routerLink="/contact-us" size="large" class="pt-2 text-white">
                       Contact us
                     </ion-button>
                   </div>
                 </div>
               </ion-col>
             </ion-row>
-            <div class="text ">
-              <div>
-
-              </div>
-            </div>
+   
           </ion-grid>
 
         </div>
       </ng-template>
     </swiper>
   </header>
-  <section id="welcome" class="py-5">
+  <section id="welcome" class="py-md-5">
     <ion-grid fixed>
       <app-welcome></app-welcome>
     </ion-grid>

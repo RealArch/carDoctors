@@ -13,6 +13,7 @@ import { TechnetBannerComponent } from './technet-banner/technet-banner.componen
 import { WelcomeComponent } from './welcome/welcome.component';
 import { WhyUsComponent } from './why-us/why-us.component';
 import { ShowServicesComponent } from './show-services/show-services.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //
 
@@ -27,13 +28,16 @@ import { ShowServicesComponent } from './show-services/show-services.component';
     TechnetBannerComponent,
     WelcomeComponent,
     WhyUsComponent,
-    ShowServicesComponent
+    ShowServicesComponent,
+
   ],
   imports: [
     GoogleMapsModule,
     CommonModule,
     IonicModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   exports: [

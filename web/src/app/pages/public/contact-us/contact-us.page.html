@@ -2,21 +2,21 @@
   <section>
     <app-common-header [headerName]="headerName" [breadcrums]="breadcrums"></app-common-header>
   </section>
-  <div class="container">
-    <section class="contact-data my-5 py-5">
+  <ion-grid fixed class="ion-padding">
+    <section class="contact-data pb-2 my-md-5">
       <ion-row class="d-flex justify-content-center h-100">
         <ion-col size="12" size-lg="3" class="">
-          <ion-card class="d-flex justify-content-center align-items-center contact-item h-100">
+          <ion-card class="m-0 d-flex justify-content-center contact-item h-100">
             <ion-card-content class="p-4">
               <div>
                 <div class="m-auto text-center icon-box d-flex justify-content-center align-items-center">
                   <ion-icon color="light" size="large" name="call"></ion-icon>
                 </div>
-                <div class="title-4 text-center">
+                <div class="subtitle-2 text-uppercase text-center bold">
                   Phone
                 </div>
                 <div class="subtitle-3 text-center">
-                  (305) 766 15 17
+                  (689) 241 52 66
                 </div>
               </div>
             </ion-card-content>
@@ -24,13 +24,13 @@
           </ion-card>
         </ion-col>
         <ion-col size="12" size-lg="3">
-          <ion-card class="d-flex justify-content-center align-items-center contact-item h-100">
+          <ion-card class="m-0 d-flex justify-content-center contact-item h-100">
             <ion-card-content class="p-4">
               <div>
                 <div class="m-auto text-center icon-box d-flex justify-content-center align-items-center">
                   <ion-icon color="light" size="large" name="mail"></ion-icon>
                 </div>
-                <div class="title-4 text-center">
+                <div class="subtitle-2 text-uppercase text-center bold">
                   Email
                 </div>
                 <div class="subtitle-3 text-center">
@@ -41,13 +41,13 @@
           </ion-card>
         </ion-col>
         <ion-col size="12" size-lg="3">
-          <ion-card class="d-flex justify-content-center align-items-center contact-item h-100">
+          <ion-card class="m-0 d-flex justify-content-center contact-item h-100">
             <ion-card-content class="p-4">
               <div>
                 <div class="m-auto text-center icon-box d-flex justify-content-center align-items-center">
                   <ion-icon color="light" size="large" name="home"></ion-icon>
                 </div>
-                <div class="title-4 text-center">
+                <div class="subtitle-2 text-uppercase text-center bold">
                   Address
                 </div>
                 <div class="subtitle-3 text-center">
@@ -60,15 +60,15 @@
       </ion-row>
     </section>
 
-    <section class="contactForm mb-5">
-      <ion-card class="p-2" color="dark">
+    <section class="contactForm mb-md-5 p-1">
+      <ion-card class="p-2 m-0" color="dark">
         <app-contact-form></app-contact-form>
 
       </ion-card>
     </section>
     
     
-  </div>
+  </ion-grid>
   <section class="googleMap">
     <app-google-map></app-google-map>
   </section>
