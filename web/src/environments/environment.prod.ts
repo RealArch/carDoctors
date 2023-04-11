@@ -8,5 +8,7 @@ export const environment = {
     messagingSenderId: "314206742798",
     appId: "1:314206742798:web:2862d331d1e6852f188f5f",
     measurementId: "G-LKE2N0LN7H"
-  }
+  },
+  mailer: 'cardoctorsllc@gmail.com'
+
 };

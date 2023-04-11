@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { addDoc, collection, doc, Firestore, getFirestore, setDoc } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class MailerService {
   sendMail(name: string, email: string, phone: string, message: string) {
     var ref = collection(getFirestore(), 'mail')
     return addDoc(ref, {
-      to: 'rafael8721693@gmail.com',
+      to: environment.mailer,
       replyTo: email,
       message: {
         subject: 'Formulario CarDoctors',
