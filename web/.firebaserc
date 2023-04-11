@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "cardoctorsllc-1"
+  },
+  "targets": {
+    "cardoctorsllc-1": {
+      "hosting": {
+        "app": [
+          "cardoctorsllc-1"
+        ]
+      }
+    }
   }
 }

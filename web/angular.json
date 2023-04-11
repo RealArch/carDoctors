@@ -138,6 +138,16 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "app:build:production",
+            "firebaseProject": "cardoctorsllc-1",
+            "firebaseHostingSite": "cardoctorsllc-1"
+          }
         }
       }
     }
